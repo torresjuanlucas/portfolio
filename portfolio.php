@@ -24,4 +24,19 @@ $app->get('/', function() use ($app) {
       $app->render('index.html.twig');
  });
  
+ $app->get('/klamar', function() use ($app) {
+      $app->render('klamar.html.twig');
+ });
+ 
+  $app->get('/mrcorte', function() use ($app) {
+      $app->render('mrcorte.html.twig');
+ });
+ 
+  $app->get('/bored', function() use ($app) {
+      $app->render('bored.html.twig');
+ });
+ 
+  $app->get('/forum', function() use ($app) {
+      $app->render('forum.html.twig');
+ });
 $app->run();
